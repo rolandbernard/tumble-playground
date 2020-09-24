@@ -1,0 +1,6 @@
+[submodule "llvm"]
+	path = llvm
+	url = https://github.com/llvm/llvm-project
+[submodule "tumble"]
+	path = tumble
+	url = https://github.com/rolandbernard/tumbleweed
