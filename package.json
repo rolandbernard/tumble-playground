@@ -60,7 +60,7 @@
         "workbox-webpack-plugin": "4.3.1"
     },
     "scripts": {
-        "buildsub": "bash build-submodules",
+        "buildsub": "bash build-submodules.sh",
         "start": "yarn buildsub && node scripts/start.js",
         "build": "yarn buildsub && node scripts/build.js"
     },
