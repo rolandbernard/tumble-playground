@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'Roland Variable';
+    src: url(./fonts/Roland-Variable.woff2) format('woff2');
+    font-weight: 1 1000;
+    font-stretch: 50% 150%;
+    font-style: oblique -20deg 20deg;
+}
+
+@font-face {
+    font-family: 'Roland Mono';
+    src: url(./fonts/Roland-Mono.woff2) format('woff2'),
+         url(./fonts/Roland-Mono.ttf) format('truetype');
+    font-weight: 400;
+    font-stretch: 100%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roland';
+    src: url(./fonts/Roland-Regular.woff2) format('woff2'),
+         url(./fonts/Roland-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-stretch: 100%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.woff2) format('woff2'),
+         url(./fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-stretch: 100%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Light.woff2) format('woff2'),
+         url(./fonts/Roboto-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-stretch: 100%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Bold.woff2) format('woff2'),
+         url(./fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-stretch: 100%;
+    font-style: normal;
+}

@@ -1,6 +1,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './fonts.css';
+import './index.css';
 
 function App() {
     return (
@@ -10,5 +12,4 @@ function App() {
     );
 }
 
-ReactDOM.render(<div className="root"/>, document.getElementsByTagName('body'));
 ReactDOM.render(<App />, document.getElementById('root'));
