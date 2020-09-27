@@ -16,11 +16,11 @@ export function CodeEditor(props) {
         if (event.key === "Tab") {
             let sel_start_pos = event.currentTarget.selectionStart;
             let sel_end_pos = event.currentTarget.selectionEnd;
-            let new_value = value.substring(0, sel_start_pos) + "\t" + value.substring(sel_end_pos);
+            let new_value = value.substring(0, sel_start_pos) + "    " + value.substring(sel_end_pos);
             event.preventDefault();
             input.current.value = new_value;
-            input.current.selectionStart = sel_start_pos + 1;
-            input.current.selectionEnd = sel_start_pos + 1;
+            input.current.selectionStart = sel_start_pos + 4;
+            input.current.selectionEnd = sel_start_pos + 4;
             onChange(new_value);
         }
     }
