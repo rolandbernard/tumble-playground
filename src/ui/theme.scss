@@ -5,10 +5,10 @@ $theme-on-primary: #000000;
 $theme-on-secondary: #ffffff;
 $theme-background: #fafafa;
 $theme-on-background: #000000;
-$theme-dark-background: darken($theme-primary, 90%);
+$theme-dark-background: darken($theme-primary, 50%);
 $theme-on-dark-background: #ffffff;
 
 html {
-    background-color: $theme-background;
+    background: $theme-background;
     color: $theme-on-background;
 }

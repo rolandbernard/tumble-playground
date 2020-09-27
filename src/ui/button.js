@@ -3,8 +3,8 @@ import React, { createRef } from 'react';
 
 import './button.scss';
 
-function Button(props) {
-    const { color, style, isLink, children, ...others } = props;
+export function Button(props) {
+    const { color, variant, isLink, children, disabled, ...others } = props;
     const ripple_root = createRef();
     const onMouseDown = (event) => {
         let button = event.target;
@@ -21,7 +21,6 @@ function Button(props) {
         ripple.style.height = (size * 2) + 'px';
         ripple.style.left = (x - size) + 'px';
         ripple.style.top = (y - size) + 'px';
-        console.log(button, button.clientLeft, button.clientTop, event.clientX, event.clientY, x, y, size);
         let root_ripple = button.getElementsByClassName('ui-touch-ripple-root')[0];
         root_ripple.appendChild(ripple);
     };
@@ -39,9 +38,9 @@ function Button(props) {
         });
     };
     let classes = 'ui-button';
-    if(style && style.toLowerCase() === 'outlined') {
+    if(variant && variant.toLowerCase() === 'outlined') {
         classes += ' ui-button-outlined';
-    } else if(style && style.toLowerCase() === 'text') {
+    } else if(variant && variant.toLowerCase() === 'text') {
         classes += ' ui-button-text';
     }
     if(color && color.toLowerCase() === 'primary') {
@@ -65,6 +64,7 @@ function Button(props) {
             onMouseDown={onMouseDown}
             onMouseUp={onMouseUpOrLeave}
             onMouseLeave={onMouseUpOrLeave}
+            disabled={disabled}
             { ...others }
         >
             <span ref={ripple_root} className="ui-touch-ripple-root"></span>
