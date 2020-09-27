@@ -48,6 +48,9 @@ export function Button(props) {
     } else if(color && color.toLowerCase() === 'secondary') {
         classes += ' ui-button-secondary';
     }
+    if(disabled) {
+        classes += ' ui-button-disabled';
+    }
     return (isLink ?
         (<a
             className={classes}

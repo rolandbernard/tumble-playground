@@ -159,3 +159,33 @@
 .ui-button-outlined.ui-button-secondary:hover, .ui-button-text.ui-button-secondary:hover {
     background: transparentize($theme-secondary, 0.95);
 }
+
+.ui-button-disabled {
+    background: transparentize(desaturate(mix($theme-background, $theme-on-background, 90%), 70%), 0.70);
+    color: transparentize(desaturate($theme-on-background, 70%), 0.50);
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.ui-button-primary.ui-button-disabled {
+    background: transparentize(desaturate($theme-primary, 70%), 0.70);
+    color: transparentize(desaturate($theme-on-primary, 70%), 0.50);
+}
+
+.ui-button-secondary.ui-button-disabled {
+    background: transparentize(desaturate($theme-secondary, 70%), 0.70);
+    color: transparentize(desaturate($theme-on-secondary, 70%), 0.50);
+}
+
+.ui-button-outlined.ui-button-disabled, .ui-button-text.ui-button-disabled {
+    background: none;
+    color: transparentize(desaturate($theme-on-background, 70%), 0.50);
+}
+
+.ui-button-outlined.ui-button-disabled.ui-button-primary, .ui-button-text.ui-button-disabled.ui-button-primary {
+    color: transparentize(desaturate($theme-primary, 70%), 0.50);
+}
+
+.ui-button-outlined.ui-button-disabled.ui-button-secondary, .ui-button-text.ui-button-disabled.ui-button-secondary {
+    color: transparentize(desaturate($theme-secondary, 70%), 0.50);
+}
