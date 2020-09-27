@@ -51,6 +51,7 @@
     min-width: 4ch;
     padding-right: 1ch;
     align-items: last baseline;
+    user-select: none;
 }
 
 .ui-code-editor-linenumber, .ui-code-editor-lines, .ui-code-editor-input {
