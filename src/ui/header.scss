@@ -1,0 +1,24 @@
+
+@import 'theme';
+
+.ui-header {
+    background: $theme-dark-background;
+    color: $theme-on-dark-background;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    min-height: 64px;
+    padding: 0 16px;
+    margin-bottom: 6px;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),
+        0px 4px 5px 0px rgba(0,0,0,0.14),
+        0px 1px 10px 0px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+}
+
+.ui-header-spacer {
+    flex: 1 1 100%;
+}
