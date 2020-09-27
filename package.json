@@ -5,6 +5,7 @@
     "license": "MIT",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://rolandbernard.github.io/tumble-playground/",
     "dependencies": {
         "@babel/core": "7.9.0",
         "@svgr/webpack": "4.3.3",
