@@ -4,6 +4,6 @@ import ReactDOM from 'react-dom';
 import 'typeface-roboto';
 
 import App from './app';
-import './index.css';
+import './index.scss';
 
 ReactDOM.render(<App />, document.getElementById('root'));
