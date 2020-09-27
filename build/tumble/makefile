@@ -7,7 +7,7 @@ SDIR=../../tumble/src
 CC=emcc
 LINK=em++
 LLVMCONF=llvm-config
-CFLAGS=-g -O3 -I$(IDIR) -Wall $(FLAGS) -I../../llvm/llvm/include/ -I../llvm/include/ -s INVOKE_RUN=0 \
+CFLAGS=-O3 -I$(IDIR) -Wall $(FLAGS) -I../../llvm/llvm/include/ -I../llvm/include/ -s INVOKE_RUN=0 \
 	-s MODULARIZE=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -s ENVIRONMENT=web -s FORCE_FILESYSTEM=1 \
 	-s ERROR_ON_UNDEFINED_SYMBOLS=0 -s EXPORT_NAME=Tumble -s EXPORTED_RUNTIME_METHODS='["callMain", "FS"]' \
 	-s MAIN_MODULE=1
