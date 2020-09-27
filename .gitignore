@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 static/tumble.wasm
-src/tumble.js
+static/tumble.js

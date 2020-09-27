@@ -1,15 +1,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './fonts.css';
-import './index.css';
+import 'typeface-roboto';
 
-function App() {
-    return (
-        <div>
-            <h1>Hello world!</h1>
-        </div>
-    );
-}
+import App from './app';
+import './index.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));

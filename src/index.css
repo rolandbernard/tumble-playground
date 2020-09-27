@@ -1,19 +1,10 @@
 
-* {
-    font-family: "Roland", "Roboto", sans-serif;
+html {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     padding: 0;
     margin: 0;
-    --theme-primary: #00d0e0;
-    --theme-secondary: #e00f00;
-    --theme-on-primary: #000000;
-    --theme-on-secondary: #ffffff;
-    --theme-background: #f0f0f0;
-    --theme-on-background: #0f0f0f;
 }
 
-@supports(font-variation-settings: "wdht" 115) {
-    * {
-        font-family: "Roland Variable", "Roland", "Roboto", sans-serif;
-    }
+*, ::before, ::after {
+    box-sizing: inherit;
 }
-

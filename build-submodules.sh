@@ -6,6 +6,5 @@ then
     cd ../tumble/ && \
     make && \
     cd ../../ && \
-    cp build/tumble/bin/tumble.js src/ && \
-    cp build/tumble/bin/tumble.wasm static/
+    cp build/tumble/bin/tumble.* static/
 fi
