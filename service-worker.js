@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tumble-playground/precache-manifest.1d77bacfa38ccf104307834a4b40094c.js"
+  "/tumble-playground/precache-manifest.8cf411091cae374501dbc3f42730b11e.js"
 );
 
 self.addEventListener('message', (event) => {
