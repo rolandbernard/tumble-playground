@@ -45,42 +45,42 @@ function App() {
                 <span className="header-title">Tumbleweed</span>
                 <Spacer></Spacer>
             </Header>
-            {loading ?
-                (<div className="app-content-loading"><Spinner></Spinner></div>) :
-                (<div className="app-content">
-                    <div style={{ flex: '1 1 100%', display: 'flex', flexDirection: 'column' }}>
-                        <div className="app-content-header">
-                            Input:
+            <div className="app-content">
+                <div style={{ flex: '1 1 100%', display: 'flex', flexDirection: 'column' }}>
+                    <div className="app-content-header">
+                        Input:
                         <Spacer></Spacer>
-                            <Button
-                                disabled={running}
-                                color="primary"
-                                style={{ margin: 0, flex: '0 0 auto' }}
-                                onClick={onRunProgram}
-                            >Run program</Button>
-                        </div>
-                        <CodeEditor
-                            style={{ flex: '1 1 100%' }}
-                            value={input}
-                            onChange={(value) => setInput(value)}
-                        ></CodeEditor>
+                        <Button
+                            disabled={running || loading}
+                            color="primary"
+                            style={{ margin: 0, flex: '0 0 auto' }}
+                            onClick={onRunProgram}
+                        >Run program</Button>
                     </div>
-                    <div style={{ flex: '1 1 75%', display: 'flex', flexDirection: 'column' }}>
-                        <div className="app-content-header">
+                    <CodeEditor
+                        style={{ flex: '1 1 100%' }}
+                        value={input}
+                        onChange={(value) => setInput(value)}
+                    ></CodeEditor>
+                </div>
+                <div style={{ flex: '1 1 75%', display: 'flex', flexDirection: 'column' }}>
+                    {loading ?
+                        (<div className="app-loading"><Spinner></Spinner></div>) :
+                        ([(<div className="app-content-header">
                             Output:
-                        <Spacer></Spacer>
+                            <Spacer></Spacer>
                             <Button
                                 variant="outlined"
                                 color="secondary"
                                 style={{ margin: 0, flex: '0 0 auto' }}
                                 onClick={onClearOutput}
                             >Clear output</Button>
-                        </div>
-                        <Paper style={{ flex: '1 1 100%' }}><pre>{output.replace(/\x1B\[.*?m/g, "")}</pre></Paper>
-                    </div>
-                </div>)
-            }
-            
+                        </div>),
+                        (<Paper className="app-output">
+                            <pre>{output.replace(/\x1B\[.*?m/g, "")}</pre>
+                        </Paper>)])}
+                </div>
+            </div>
         </div>
     );
 }

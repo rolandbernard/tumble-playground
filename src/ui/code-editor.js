@@ -4,7 +4,7 @@ import React, { createRef } from 'react';
 import './code-editor.scss';
 
 export function CodeEditor(props) {
-    const { value, onChange, ...others } = props;
+    const { value, onChange, className, ...others } = props;
     const input = createRef();
     let line_count = value ? value.split('\n').length : 1;
     const myOnChange = (event) => {
@@ -25,7 +25,7 @@ export function CodeEditor(props) {
         }
     }
     return (
-        <div className="ui-code-editor" {...others}>
+        <div className={'ui-code-editor ' + (className || '')} {...others}>
             <div className="ui-code-editor-container">
                 <div className="ui-code-editor-lines">
                     {[...Array(line_count).keys()].map((i) => (

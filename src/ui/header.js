@@ -4,8 +4,9 @@ import React from 'react';
 import './header.scss';
 
 export function Header(props) {
+    const { className, ...others } = props;
     return (
-        <div className="ui-header" {...props}>
+        <div className={'ui-header ' + (className || '')} {...others}>
         </div>
     );
 }

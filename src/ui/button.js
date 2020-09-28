@@ -4,7 +4,7 @@ import React, { createRef } from 'react';
 import './button.scss';
 
 export function Button(props) {
-    const { color, variant, isLink, children, disabled, ...others } = props;
+    const { color, variant, isLink, children, disabled, className, ...others } = props;
     const ripple_root = createRef();
     const onMouseDown = (event) => {
         let button = event.target;
@@ -50,6 +50,9 @@ export function Button(props) {
     }
     if(disabled) {
         classes += ' ui-button-disabled';
+    }
+    if(className) {
+        classes += ' ' + className;
     }
     return (isLink ?
         (<a
