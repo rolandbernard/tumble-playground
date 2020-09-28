@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0e2410207a017d4080bed0f74eae33d",
+    "revision": "c60d36556817ceb7bc11014f524525f8",
     "url": "/tumble-playground/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tumble-playground/static/css/2.4db693fb.chunk.css"
   },
   {
-    "revision": "d47d9974cf3c8d06d40b",
+    "revision": "66cc9f5e610c9565061f",
     "url": "/tumble-playground/static/css/main.8821f2d6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tumble-playground/static/js/2.bbb5d343.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d47d9974cf3c8d06d40b",
-    "url": "/tumble-playground/static/js/main.078e9004.chunk.js"
+    "revision": "66cc9f5e610c9565061f",
+    "url": "/tumble-playground/static/js/main.f6a188f8.chunk.js"
   },
   {
     "revision": "c4fcda3b52a7f9a293f6",
